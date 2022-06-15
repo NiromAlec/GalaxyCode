@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "681892454783",
+    "project_id": "aa-project-c05e9",
+    "storage_bucket": "aa-project-c05e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681892454783:android:83f2725d30ed3e497bba4a",
+        "android_client_info": {
+          "package_name": "com.uniquindio.codegame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681892454783-3o34ca220uh2f62gnc6svddv2cubmd6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoELxNY5OmIWUXWuWYiCKVUfxrxICnPEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681892454783-3o34ca220uh2f62gnc6svddv2cubmd6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

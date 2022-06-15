@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable-v21/esquinas_redondeadas_estadisticas.xml" value="0.3835" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable-v24/esquinas_redondeadas.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable-v24/esquinas_redondeadasnivel5.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable-v24/ic_downnivel5.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable-v24/ic_leftnivel5.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable-v24/ic_rightnivel5.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable-v24/ic_upnivel5.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/degradadojugador.xml" value="0.103" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/esquinas_redondeadasnivel2.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/esquinas_redondeadasnivel4.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_back_to.xml" value="0.3765" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_backneon.xml" value="0.15" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.3835" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.301" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_delete.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_deleteyellow.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_down.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_downnivel4.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_left.xml" value="0.341" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_leftnivel4.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_right.xml" value="0.341" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_rightnivel4.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_up.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/ic_upnivel4.xml" value="0.387" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/drawable/splash.xml" value="0.301" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_encuesta.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_estadisticas.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_jugadores.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_nivel1.xml" value="0.5" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_nivel2.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_nivel3.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_nivel4.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_nivel5.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_registro.xml" value="0.3098958333333333" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_resultados.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_ventana_info.xml" value="0.3098958333333333" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_ventana_info2.xml" value="0.5" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/activity_ventana_menu.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/content_menu.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/fragment_home.xml" value="0.25092592592592594" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/jugadore_list.xml" value="0.5" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/nav_header_menu.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/toast_nv1.xml" value="0.29739583333333336" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/toast_nv2.xml" value="0.29739583333333336" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/toast_nv3.xml" value="0.29739583333333336" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/toast_nv4.xml" value="0.29739583333333336" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/layout/toast_nv5.xml" value="0.29739583333333336" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/menu/menu.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/menu/navigation_drawer.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ACER/Documents/2022/AndroidDise/CodeGame/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.301" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

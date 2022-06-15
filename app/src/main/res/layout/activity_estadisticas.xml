@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back_registro"
+    tools:context=".presentacion.EstadisticasActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="SpeakableTextPresentCheck">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txv_estadisticas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/trade_winds"
+                android:text="  Estadisticas"
+                android:textColor="@color/Icono02"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/layoutEstadisticasxnivel"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/esquinas_redondeadas_estadisticas"
+                android:elevation="50dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txv_estadisticas">
+
+                <TextView
+                    android:id="@+id/txv_Estad_promedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/potta_one"
+                    android:gravity="center"
+                    android:text="Promedio por nivel"
+                    android:textColor="@color/Iconos01"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/resul_nv1_promedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 1: "
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv2_promedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 2:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/resul_nv3_promedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 3:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv4_promedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 4:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv5_promedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 5:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEstadisticasxganadorxperdedor"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/esquinas_redondeadas_estadisticas"
+                android:elevation="50dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutEstadisticasxnivel">
+
+                <TextView
+                    android:id="@+id/txv_Estad_global"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/potta_one"
+                    android:gravity="center"
+                    android:text="Estadisticas Por nivel"
+                    android:textColor="@color/Iconos01"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/resul_nv1xnivel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 1: "
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv1xnivel_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 1: "
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv2xnivel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 2:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv2xnivel_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 2:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/resul_nv3xnivel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 3:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv3xnivel_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 3:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv4xnivel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 4:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv4xnivel_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 4:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv5xnivel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 5:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resul_nv5xnivel_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/trade_winds"
+                    android:gravity="center"
+                    android:text="Nivel 5:"
+                    android:textColor="@color/green02"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="47dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="52dp"
+                app:layout_constraintBottom_toTopOf="@+id/layoutEstadisticasxnivel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txv_estadisticas"
+                app:srcCompat="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/numUsarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/trade_winds"
+                android:text="0"
+                android:textColor="@color/Icono02"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/layoutEstadisticasxnivel"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/txv_estadisticas"
+                app:layout_constraintVertical_bias="0.516" />
+
+            <LinearLayout
+                android:id="@+id/layoutEstadisticas_encuestas"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="21dp"
+                android:background="@drawable/esquinas_redondeadas_estadisticas"
+                android:elevation="50dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutEstadisticasxganadorxperdedor">
+
+                <TextView
+                    android:id="@+id/txv_Estad_encuesta_global"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/potta_one"
+                    android:gravity="center"
+                    android:text="Estadisticas de la Encuesta"
+                    android:textColor="@color/Iconos01"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+
+                            android:layout_width="80dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_0pr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="Pregunta/Respuesta"
+                                android:textColor="@color/pink" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_1p"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="Pregunta 1"
+                                android:textColor="@color/pink" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_2p"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="Pregunta 2"
+                                android:textColor="@color/pink" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_3p"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="Pregunta 3"
+                                android:textColor="@color/pink" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="0"
+                                android:textColor="@color/pink" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p1_0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p2_0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p3_0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="1"
+                                android:textColor="@color/pink" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p1_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p2_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p3_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="2"
+                                android:textColor="@color/pink" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p1_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p2_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p3_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="3"
+                                android:textColor="@color/pink" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p1_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p2_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p3_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="4"
+                                android:textColor="@color/pink" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p1_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p2_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p3_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/trade_winds"
+                                android:text="5"
+                                android:textColor="@color/pink" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p1_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p2_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txv_p3_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/potta_one"
+                                android:text="0/0"
+                                android:textColor="@color/Iconos01" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

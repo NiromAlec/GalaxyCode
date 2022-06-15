@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/back_registro"
+        tools:context=".presentacion.EncuestaActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txv_encuesta_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/trade_winds"
+                android:text="Encuesta"
+                android:textColor="@color/orange"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/layoutEncuesta_01"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/esquinas_redondeadas_estadisticas"
+                android:elevation="50dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txv_encuesta_titulo">
+
+                <TextView
+                    android:id="@+id/txv_encuesta_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/fugaz_one"
+                    android:gravity="center"
+                    android:text="Pregunta 1: "
+                    android:textColor="@color/Title02"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txv_pregunta_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/potta_one"
+                    android:text="En la escala del cero al cinco que tan dificil le parecieron los niveles del juego. (siendo cero muy facil y cinco muy dificil)"
+                    android:textAlignment="center"
+                    android:textColor="@color/pink"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/pregunta_01_R_0"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="0     Muy facil"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_01_R_1"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="1     facil"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_01_R_2"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="2     normal"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_01_R_3"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="3     algo dificil"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_01_R_4"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="4     dificil"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_01_R_5"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="5     Muy dificil"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEncuesta_02"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/esquinas_redondeadas_estadisticas"
+                android:elevation="50dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutEncuesta_01">
+
+                <TextView
+                    android:id="@+id/txv_encuesta_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/fugaz_one"
+                    android:gravity="center"
+                    android:text="Pregunta 2: "
+                    android:textColor="@color/Title02"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/txv_pregunta_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/potta_one"
+                    android:text="Que tan agradable fue para usted el diseño de los niveles del juego. (siendo cero nada agradable y cinco muy agradable)"
+                    android:textAlignment="center"
+                    android:textColor="@color/pink"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pregunta_02_R_0"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="0"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_02_R_1"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="1"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_02_R_2"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="2"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_02_R_3"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="3"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_02_R_4"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="4"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_02_R_5"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="5"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEncuesta_03"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/esquinas_redondeadas_estadisticas"
+                android:elevation="50dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutEncuesta_02">
+
+                <TextView
+                    android:id="@+id/txv_encuesta_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/fugaz_one"
+                    android:gravity="center"
+                    android:text="Pregunta 3: "
+                    android:textColor="@color/Title02"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txv_pregunta_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/potta_one"
+                    android:text="Que tan satisfecho quedó con los resultados finales del juego. (siendo cero nada satisfecho y cinco muy satisfecho)"
+                    android:textAlignment="center"
+                    android:textColor="@color/pink"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pregunta_03_R_0"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="0"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_03_R_1"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="1"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_03_R_2"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="2"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_03_R_3"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="3"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_03_R_4"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="4"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+
+                    <RadioButton
+                        android:id="@+id/pregunta_03_R_5"
+                        android:layout_width="48dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/potta_one"
+                        android:text="5"
+                        android:textColor="@color/pink"
+                        app:buttonTint="@color/Icono02" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/enviarEncuesta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/potta_one"
+                android:onClick="enviarDatos"
+                android:text="Enviar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cargando_encuesta" />
+
+            <ProgressBar
+                android:id="@+id/cargando_encuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutEncuesta_03" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+    </RelativeLayout>

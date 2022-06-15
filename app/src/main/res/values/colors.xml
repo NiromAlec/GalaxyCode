@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Background">#4cc9f0</color>
+    <color name="Backround2">#4895EF</color>
+    <color name="Title01">#4361EE</color>
+    <color name="Title02">#7209B7</color>
+    <color name="Iconos01">#B5179E</color>
+    <color name="Icono02">#F72585</color>
+    <color name="white">#ECEFF1</color>
+    <color name="pink">#4a006f</color>
+    <color name="yellow">#ffbe0b</color>
+    <color name="orange">#fb5607</color>
+    <color name="green01">#8ac926</color>
+    <color name="green02">#283618</color>
+    <color name="tierra01">#bc6c25</color>
+    <color name="tierra02">#eeef20</color>
+
+</resources>

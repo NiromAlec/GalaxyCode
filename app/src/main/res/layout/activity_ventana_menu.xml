@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_planet"
+    tools:context=".presentacion.ventana_menu">
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="  Menu"
+        android:textColor="@color/Background"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_jugadores"
+        android:layout_width="293dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="mostrarjugadores"
+        android:text="Jugadores Registrados"
+        android:textColor="@color/Icono02"
+        android:textSize="20sp"
+        app:backgroundTint="@color/Background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
+
+    <Button
+        android:id="@+id/btn_estadisticas"
+        android:layout_width="293dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="mostrarEstadisticas"
+        android:text="Estadisticas"
+        android:textColor="@color/Icono02"
+        android:textSize="20sp"
+        app:backgroundTint="@color/Background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jugadores" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/monsterMenu"
+        android:layout_width="197dp"
+        android:layout_height="224dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_estadisticas"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/monster">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:onClick="volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_backneon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

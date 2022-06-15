@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_lava"
+    tools:context=".presentacion.Nivel_2">
+
+    <!-- Botones de movimiento -->
+
+    <ImageButton
+        android:id="@+id/btn_down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:onClick="btn_down"
+        android:elevation="30dp"
+        android:tint="@color/yellow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_right"
+        app:layout_constraintTop_toBottomOf="@+id/btn_up"
+        app:srcCompat="@drawable/ic_down" />
+
+    <!-- Texto indicador de nivel-->
+
+    <ImageButton
+        android:id="@+id/btn_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:elevation="30dp"
+        android:onClick="btn_left"
+        android:tint="@color/yellow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_down"
+        app:layout_constraintTop_toBottomOf="@+id/matriz"
+        app:srcCompat="@drawable/ic_left" />
+
+    <ImageButton
+        android:id="@+id/btn_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="22dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:onClick="btn_right"
+        android:elevation="30dp"
+        android:tint="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matriz"
+        app:srcCompat="@drawable/ic_right" />
+
+    <ImageButton
+        android:id="@+id/btn_up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="76dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:onClick="btn_up"
+        android:tint="@color/yellow"
+        android:elevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matriz"
+        app:srcCompat="@drawable/ic_up" />
+
+    <TextView
+        android:id="@+id/Nivel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Nivel 2"
+        android:textColor="@color/yellow"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Layout contenedor de la matriz -->
+
+    <LinearLayout
+        android:id="@+id/matriz"
+        android:layout_width="350dp"
+        android:layout_height="435dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/yellow"
+        android:orientation="horizontal"
+        android:elevation="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nivel5">
+
+        <!--  Contenedor vertical de framelayouts (cada cuadro de la matriz)-->
+        <LinearLayout
+            android:id="@+id/c0"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/f_0"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/cero"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/lava_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/seis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/doce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/diezocho"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veintecuatro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/treinta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/spaceship">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/c1"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/f_0_c_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/uno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_1_c_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/siete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_2_c_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/trece"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_3_c_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/dieznueve"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_4_c_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veintecinco"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_5_c_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/treintauno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c2"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/f_0_c_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/lava_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/dos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_1_c_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/ocho"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_2_c_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/lava_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/catorce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_3_c_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/lava_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veinte"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_4_c_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veinteseis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_5_c_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/treintados"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c3"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/f_0_c_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/tres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_1_c_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/nueve"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_2_c_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/quince"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_3_c_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veinteuno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_4_c_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veintesiete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_5_c_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/lava_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/treintatres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c4"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/f_0_c_4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/cuatro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_1_c_4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/diez"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_2_c_4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/diezseis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_3_c_4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/lava_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veintedos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_4_c_4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veinteocho"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_5_c_4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/treintacuatro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/c5"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/f_0_c_5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/cinco"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_1_c_5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/once"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_2_c_5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/diezsiete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_3_c_5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veintetres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_4_c_5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/veintenueve"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f_5_c_5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rock_block">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/treintacinco"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hero">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/listaSecuencias"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/esquinas_redondeadasnivel2"
+        android:elevation="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|center_vertical"
+        android:hint="Lista de Pasos"
+        android:textColor="@color/pink"
+        android:textColorHint="@color/pink"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matriz" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@color/orange"
+        android:elevation="40dp"
+        android:fontFamily="sans-serif-black"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="onClick"
+        android:text="Play"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_down"
+        app:rippleColor="@color/yellow" />
+
+    <ImageButton
+        android:id="@+id/delete_pasos"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:background="@android:color/transparent"
+        android:onClick="limpiarPasos"
+        android:elevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_play"
+        app:layout_constraintStart_toEndOf="@+id/listaSecuencias"
+        app:layout_constraintTop_toBottomOf="@+id/btn_left"
+        app:srcCompat="@drawable/ic_deleteyellow"
+        app:rippleColor="@color/pink"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/help02"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:onClick="mostrarTutorial2"
+        android:tint="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_help_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
